@@ -1,12 +1,8 @@
 {
-    "name": "My Codespace",
+    "name": "King Codespace",
     "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
-    "features": {
-        "ghcr.io/devcontainers/features/sshd:1": {
-            "version": "latest"
-        }
-    },
-    "postStartCommand": "REPO_NAME=$(basename $(git rev-parse --show-toplevel)); python3 /workspaces/MANAV-VIP/manav.py",
+    "postStartCommand": "echo '*'; echo '*         @LEGENDXOPL Bot Running      *'; echo '*'; python /workspaces/King/LEGEND.py",
+    "postCreateCommand": "pip install pymongo python-telegram-bot pyTelegramBotAPI certifi && chmod +x /workspaces/King/*",
     "customizations": {
         "vscode": {
             "settings": {
